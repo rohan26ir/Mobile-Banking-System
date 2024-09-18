@@ -6,6 +6,14 @@ document.getElementById('log-in').addEventListener('click', function(event){
   console.log('Log in Button');
 
   const phnNumber = document.getElementById('phone-number').value;
-  console.log(phnNumber);
+  const pinNumber = document.getElementById('pin-number').value;
+  console.log(phnNumber ,pinNumber);
+
+  if(phnNumber === '017' && pinNumber === '123'){
+    console.log("you Are login");
+  }
+  else{
+    alert('Wrong, Try Agin')
+  }
 
 })
