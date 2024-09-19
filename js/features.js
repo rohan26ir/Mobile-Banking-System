@@ -18,5 +18,9 @@ document.getElementById('btn-show-Cash-Out').addEventListener('click', function(
 
 
 document.getElementById('btn-refresh').addEventListener('click', function(){
-  window.location.href='./home.html';
+
+  document.getElementById('Add-Money-form').classList.add('hidden')
+
+  document.getElementById('Cash-Out-Form').classList.add('hidden')
+
 })
