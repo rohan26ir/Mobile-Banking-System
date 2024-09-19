@@ -15,3 +15,8 @@ document.getElementById('btn-show-Cash-Out').addEventListener('click', function(
 
 
 })
+
+
+document.getElementById('btn-refresh').addEventListener('click', function(){
+  window.location.href='./home.html';
+})
