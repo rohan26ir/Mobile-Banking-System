@@ -11,6 +11,7 @@ document.getElementById('log-in').addEventListener('click', function(event){
 
   if(phnNumber === '017' && pinNumber === '123'){
     console.log("you Are login");
+    window.location.href = './home.html';
   }
   else{
     alert('Wrong, Try Agin')
