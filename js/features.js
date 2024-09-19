@@ -24,3 +24,8 @@ document.getElementById('btn-refresh').addEventListener('click', function(){
   document.getElementById('Cash-Out-Form').classList.add('hidden')
 
 })
+
+document.getElementById('btn-logout').addEventListener('click', function(){
+
+  window.location.href='./index.html';
+})
