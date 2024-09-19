@@ -19,7 +19,7 @@
            <div>
             <div class="stats shadow">
               <div class="stat">
-                <div class="stat-value">8900</div>
+                <div id="account-balance" class="stat-value">8900</div>
                 <div class="stat-desc">Available Balance</div>
               </div>
             </div>
@@ -27,12 +27,35 @@
            <div class="divider"></div> 
            <!-- User Action button -->
            <div>
-            <button class="btn btn-lg">Add Money</button>
-            <button class="btn btn-lg">Cash Out</button>
+            <button id="btn-show-Add-Money" class="btn btn-lg">Add Money</button>
+            <button id="btn-show-Cash-Out" class="btn btn-lg">Cash Out</button>
            </div>
            <div class="divider"></div>
+
+
            <!-- Start Add Money form -->
-           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+           <div id="Cash-Out-Form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input id="input-cash-out" type="number" placeholder="Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input-cash-out-pin" type="password" placeholder="Pin" autocomplete="off" class="input input-bordered" required /> 
+              </div>
+              <div class="form-control mt-6">
+                <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+              </div>
+            </form>
+          </div>
+          <!-- End Add Money Form -->
+           <!-- Start cash out -->
+           <div id="Add-Money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -51,12 +74,14 @@
               </div>
             </form>
           </div>
-          <!-- End Add Money Form -->
+           <!-- End Cash out -->
         </div>
       </div>
     </div>
   </main>
   <footer></footer>
-  <script src="./js/home.js"></script>
+  <script src="./js/add-money.js"></script>
+  <script src="./js/cash-out.js"></script>
+  <script src="./js/features.js"></script>
 </body>
 </html>
