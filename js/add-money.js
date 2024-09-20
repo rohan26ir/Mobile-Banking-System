@@ -8,7 +8,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
   const inputAddPin = document.getElementById('input-add-pin').value;
   console.log(inputAddMoney, inputAddPin);
 
-  if(inputAddPin === '123'){
+  if(inputAddPin === '1234'){
 
     console.log("Adding Money");
     const acBalance = document.getElementById('account-balance').innerText;
@@ -22,6 +22,17 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
     // Step : 6 (Update balance)
      document.getElementById('account-balance').innerText = newBalance;
+
+    //  Add to Transaction section
+    const li = document.createElement('li');
+    li.innerText = `
+       Added ${inputAddMoneyInt} tk.
+       New Balence: ${newBalance} tk.
+    ` 
+    console.log(li);
+
+    // Show this Transaction Section
+    document.getElementById('Transaction-list').appendChild(li)
 
   }
   else{

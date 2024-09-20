@@ -23,6 +23,18 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     // Step : 6 (Update balance)
      document.getElementById('account-balance').innerText = newBalance;
 
+     //  Add to Transaction section
+    const li = document.createElement('li');
+    li.innerText = `
+       Cash Out ${inputAddMoneyInt} tk.
+       New Balence: ${newBalance} tk.
+    ` 
+    console.log(li);
+
+    // Show this Transaction Section
+    document.getElementById('Transaction-list').appendChild(li)
+
+
   }
   else{
     alert('Try Again')

@@ -36,12 +36,13 @@
            <div>
             <button id="btn-show-Add-Money" class="btn bg-orange-400">Add Money</button>
             <button id="btn-show-Cash-Out" class="btn bg-orange-400">Cash Out</button>
+            <button id="btn-show-transaction" class="btn bg-orange-400">Transaction</button><br>
             <button id="btn-refresh" class="btn bg-orange-500">Refresh</button>
            </div>
            <div class="divider"></div>
 
 
-           <!-- Start Add Money form -->
+           <!-- Start Cash out form -->
            <div id="Cash-Out-Form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
@@ -61,8 +62,8 @@
               </div>
             </form>
           </div>
-          <!-- End Add Money Form -->
-           <!-- Start cash out -->
+          <!-- End Cash out Form -->
+           <!-- Start Add Money -->
            <div id="Add-Money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
@@ -83,6 +84,13 @@
             </form>
           </div>
            <!-- End Cash out -->
+            <!-- Strat Transaction -->
+             <dib id="Transaction-field" class="hidden p-2 w-10/12 h-2/5 rounded-lg ">
+              <h2 class="text-center text-gray-800 font-bold text-xl border-b-2 border-gray-400" >Transaction List</h2>
+              <ol id="Transaction-list">
+              </ol>
+             </dib>
+            <!-- Strat Transaction -->
         </div>
       </div>
     </div>
