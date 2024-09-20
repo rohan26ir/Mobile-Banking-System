@@ -9,7 +9,7 @@ document.getElementById('log-in').addEventListener('click', function(event){
   const pinNumber = document.getElementById('pin-number').value;
   console.log(phnNumber ,pinNumber);
 
-  if(phnNumber === '017' && pinNumber === '123'){
+  if(phnNumber === '017' && pinNumber === '1234'){
     console.log("you Are login");
     window.location.href = './home.html';
   }

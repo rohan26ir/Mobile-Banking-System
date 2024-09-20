@@ -8,7 +8,7 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
   const inputCashOutPin = document.getElementById('input-cash-out-pin').value;
   console.log(inputCashOut, inputCashOutPin);
 
-  if(inputCashOutPin === '123'){
+  if(inputCashOutPin === '1234'){
 
     console.log("Adding Money");
     const acBalance = document.getElementById('account-balance').innerText;
